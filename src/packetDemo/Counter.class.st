@@ -17,3 +17,19 @@ Counter >> count [
 Counter >> count: anInteger [
 	count := anInteger 
 ]
+
+{ #category : 'accessing' }
+Counter >> increment [ 
+	count := count + 1
+]
+
+{ #category : 'accessing' }
+Counter >> initialize [ 
+	super initialize.
+	count := 0
+]
+
+{ #category : 'accessing' }
+Counter >> startingAt: anInteger [
+	^ self new count: anInteger
+]

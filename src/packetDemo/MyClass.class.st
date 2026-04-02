@@ -9,5 +9,6 @@ Class {
 MyClass >> decrement2 [
 	"comment stating purpose of instance-side method"
 	"scope: class-variables  &  instance-variables"
+	self halt.
 
 ]
